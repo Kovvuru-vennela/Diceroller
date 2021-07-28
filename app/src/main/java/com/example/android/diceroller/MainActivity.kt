@@ -34,10 +34,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d("Method" , "onCreate")
+
         // Get the Button view from the layout and assign a click
         // listener to it.
         val rollButton: Button = findViewById(R.id.roll_button)
+        Log.d("Method" , "onCreate")
         rollButton.setOnClickListener { rollDice() }
     }
 
